@@ -1,0 +1,520 @@
+/* =========================
+   ベーカリー全体
+========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8ef;
+    color: #4b3425;
+}
+
+
+/* =========================
+   ヘッダー
+========================= */
+
+header {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+}
+
+
+/* =========================
+   パンの商品一覧
+========================= */
+
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+/* パンを横に並べる */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 1つの商品 */
+
+.product {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 商品写真 */
+
+.product img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* 商品名 */
+
+.product h3 {
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   Facebookボタン
+========================= */
+
+.facebook {
+    display: inline-block;
+    margin: 40px 0;
+    padding: 15px 30px;
+    background-color: #1877f2;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.facebook:hover {
+    opacity: 0.8;
+}
+
+
+/* =========================
+   スマホ用
+========================= */
+
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product img {
+        height: auto;
+    }
+
+ /* =========================
+   HOW TO ORDER / PICKUP / PAYMENT
+========================= */
+
+/* ===== Order Information ===== */
+
+.order-info {
+    width: 90%;
+    max-width: 950px;
+    margin: 50px auto;
+}
+
+/* 四角い枠 */
+.order-info .info-box {
+    display: block;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #fffaf5;
+
+    border: 2px solid #e3c9b5;
+    border-radius: 12px;
+
+    padding: 28px 35px;
+    margin: 18px 0;
+}
+
+/* 見出し */
+.order-info .info-box h2 {
+    margin: 0 0 18px 0;
+
+    color: #5a321e;
+    font-size: 25px;
+}
+
+/* 文章 */
+.order-info .info-box p {
+    color: #4b3425;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 8px 0;
+}
+
+/* 箇条書き */
+.order-info .info-box ul {
+    margin: 10px 0;
+}
+
+.order-info .info-box li {
+    color: #4b3425;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* スマホ */
+@media (max-width: 700px) {
+
+    .order-info {
+        width: 92%;
+    }
+
+    .order-info .info-box {
+        padding: 22px 20px;
+    }
+
+    .order-info .info-box h2 {
+        font-size: 21px;
+    }
+
+    .order-info .info-box p,
+    .order-info .info-box li {
+        font-size: 16px;
+    }
+}
+}
+
+/* ===== YUME BAKERY ORDER BOX ===== */
+
+.order-info {
+    width: 90%;
+    max-width: 950px;
+    margin: 50px auto;
+}
+
+.order-info .info-box {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #fffaf5;
+
+    border: 2px solid #e3c9b5 !important;
+    border-radius: 12px;
+
+    padding: 30px 35px;
+    margin: 20px 0;
+}
+
+.order-info .info-box h2 {
+    margin: 0 0 20px 0;
+
+    color: #5a321e;
+    font-size: 26px;
+}
+
+.order-info .info-box p {
+    color: #4b3425;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 8px 0;
+}
+
+.order-info .info-box ul {
+    margin: 10px 0;
+}
+
+.order-info .info-box li {
+    color: #4b3425;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .order-info {
+        width: 92%;
+    }
+
+    .order-info .info-box {
+        padding: 22px 20px;
+    }
+
+    .order-info .info-box h2 {
+        font-size: 21px;
+    }
+
+    .order-info .info-box p,
+    .order-info .info-box li {
+        font-size: 16px;
+    }
+}
+
+/* Yume Bakery ロゴの大きさ */
+     header h1 img {
+         width: 60%;
+         max-width: 700px;
+         height: auto;
+         display: block;
+         margin: 0 auto;
+     }
+
+/* Welcome と Our Items の間を調整 */
+     header {
+         padding-bottom: 0;
+     }
+
+     .subtitle {
+         margin-bottom: -40px;
+     }
+
+     .products {
+         margin-top: -40px;
+     }
+
+     /* =========================
+   PLACE YOUR ORDER
+========================= */
+
+.order-form-section {
+    width: 90%;
+    max-width: 950px;
+
+    margin: 50px auto;
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    background: #fffaf5;
+
+    border: 2px solid #e3c9b5;
+    border-radius: 15px;
+}
+
+
+/* タイトル */
+
+.order-form-title {
+    text-align: center;
+
+    color: #5a321e;
+
+    font-size: 28px;
+
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+
+/* 各入力部分 */
+
+.form-group {
+    margin-bottom: 28px;
+}
+
+
+/* ラベル */
+
+.form-group > label {
+    display: block;
+
+    color: #5a321e;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+/* 名前・電話番号・日付 */
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d8bca6;
+    border-radius: 8px;
+
+    background: white;
+
+    font-size: 16px;
+
+    font-family: inherit;
+}
+
+
+/* 商品一覧 */
+
+.product-order {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* 商品1個分 */
+
+.order-item {
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 14px 16px;
+
+    background: white;
+
+    border: 1px solid #ead5c2;
+    border-radius: 8px;
+
+    box-sizing: border-box;
+}
+
+
+/* 商品名 */
+
+.order-item span {
+
+    color: #4b3425;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+}
+
+
+/* 個数 */
+
+.order-item select {
+
+    min-width: 70px;
+
+    padding: 9px;
+
+    border: 1px solid #d8bca6;
+    border-radius: 7px;
+
+    background: white;
+
+    font-size: 16px;
+}
+
+
+/* Pickup場所 */
+
+.location-options {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.location-options label {
+
+    color: #4b3425;
+
+    font-size: 16px;
+}
+
+
+/* 送信ボタン */
+
+.order-submit-button {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #8b5e3c;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+
+/* マウスを乗せたとき */
+
+.order-submit-button:hover {
+
+    opacity: 0.85;
+}
+
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .order-form-section {
+
+        width: 92%;
+
+        padding: 22px 18px;
+
+    }
+
+    .order-form-title {
+
+        font-size: 23px;
+
+    }
+
+    .order-item {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+    .order-item select {
+
+        width: 100%;
+
+    }
+
+}
