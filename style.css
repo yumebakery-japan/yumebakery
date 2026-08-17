@@ -540,3 +540,11 @@ input[type="date"] {
     width: 100%;
     box-sizing: border-box;
 }
+
+/* スマホ用：ロゴを少し大きくする */
+@media (max-width: 600px) {
+    header h1 img {
+        width: 80%;
+        max-width: 500px;
+    }
+}
