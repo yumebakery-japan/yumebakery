@@ -528,3 +528,15 @@ h1 {
     border: 1px solid #dfc0a5;
     border-radius: 15px;
 }
+
+/* スマホでフォームがはみ出さないようにする */
+input[type="date"],
+select,
+textarea {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+input[type="date"] {
+    width: 100%;
+    box-sizing: border-box;
+}
